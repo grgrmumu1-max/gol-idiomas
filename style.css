@@ -1,0 +1,22 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;color:#fff;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 50% 0,#16834a55,transparent 38%),linear-gradient(#052d1b,#020b07);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;opacity:.13;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:45px 45px;transform:perspective(500px) rotateX(55deg) scale(1.5);transform-origin:bottom}
+.lights{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 7% 7%,#fff,transparent 2%),radial-gradient(circle at 93% 7%,#fff,transparent 2%),radial-gradient(circle at 50% 3%,#fff8,transparent 12%)}
+main{width:min(950px,92%);margin:auto;padding:35px 0 25px}
+header{text-align:center}.ball{font-size:52px;animation:float 2.4s ease-in-out infinite}
+header p{font-size:11px;letter-spacing:4px;color:#ffd43b;font-weight:900;margin-top:5px}
+h1{font-size:clamp(65px,13vw,125px);line-height:.9;font-style:italic;font-weight:1000;letter-spacing:-6px;text-shadow:0 8px #07562b,0 15px 35px #0008}
+header span{display:block;margin:18px auto 25px;color:#b9d7c5}
+.score{max-width:480px;margin:auto auto 22px;padding:12px 18px;border:1px solid #ffffff22;border-radius:14px;background:#0004;display:flex;justify-content:space-between;align-items:center}
+.score span{font-size:11px;color:#b8e9ca;font-weight:900;letter-spacing:1px}.score b{font-size:24px;color:#ffd43b}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.goal-btn{min-height:165px;border:1px solid #ffffff22;border-radius:20px;background:linear-gradient(145deg,#ffffff18,#ffffff06);color:white;cursor:pointer;padding:18px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;backdrop-filter:blur(8px);transition:.2s}
+.goal-btn:hover{transform:translateY(-7px) scale(1.02);border-color:#ffd43b;background:#ffd43b18;box-shadow:0 15px 35px #0006}
+.goal-btn:active{transform:scale(.96)}.goal-btn i{font-style:normal;font-size:48px}.goal-btn strong{font-size:17px}.goal-btn small{font-size:9px;letter-spacing:1px;color:#ffffff88;font-weight:900}
+.goal-btn.playing{animation:shake .6s;border-color:#ffd43b;box-shadow:0 0 35px #ffd43b44}
+footer{text-align:center;color:#ffffff55;font-size:11px;margin-top:25px}
+.overlay{position:fixed;inset:0;background:#00502bdd;backdrop-filter:blur(5px);display:grid;place-content:center;text-align:center;opacity:0;pointer-events:none}
+.overlay.show{animation:show .95s forwards}.ball-big{font-size:75px}.overlay h2{font-size:clamp(65px,14vw,145px);line-height:.9;color:#ffd43b;font-style:italic;font-weight:1000;text-shadow:0 8px #806500;animation:pop .7s cubic-bezier(.2,1.5,.4,1)}.overlay p{font-size:18px;letter-spacing:5px;font-weight:900;margin-top:15px}
+@keyframes float{50%{transform:translateY(-8px) rotate(5deg)}}@keyframes shake{25%{transform:rotate(-3deg) scale(1.05)}50%{transform:rotate(3deg) scale(1.05)}75%{transform:rotate(-2deg)}}@keyframes show{0%,100%{opacity:0}12%,78%{opacity:1}}@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+@media(max-width:750px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:450px){main{padding-top:20px}h1{letter-spacing:-3px}.goal-btn{min-height:140px}.goal-btn i{font-size:40px}}

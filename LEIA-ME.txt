@@ -1,0 +1,28 @@
+COMO COLOCAR OS ÁUDIOS
+
+Coloque os arquivos MP3 dentro da pasta "audios" exatamente nesta ordem e com estes nomes:
+
+01-brasil.mp3
+02-japao.mp3
+03-italia.mp3
+04-franca.mp3
+05-alemanha.mp3
+06-arabe.mp3
+07-espanhol.mp3
+
+Não precisa alterar o HTML/JavaScript.
+
+EXEMPLO:
+audios/
+  01-brasil.mp3
+  02-japao.mp3
+  03-italia.mp3
+  04-franca.mp3
+  05-alemanha.mp3
+  06-arabe.mp3
+  07-espanhol.mp3
+
+Se o áudio vier em WAV, M4A etc., converta para MP3 e mantenha exatamente esses nomes.
+
+LICENÇAS:
+Verifique a licença de cada gravação antes de publicar o site. O áudio espanhol encontrado no Freesound (Rosa-Orenes256) é CC BY 4.0 e requer atribuição. Outro comentário espanhol encontrado no Freesound é CC0.

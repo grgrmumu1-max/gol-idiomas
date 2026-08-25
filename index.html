@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOOOOL! — 7 Idiomas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lights"></div>
+<main>
+  <header>
+    <div class="ball">⚽</div>
+    <p>PAINEL INTERNACIONAL</p>
+    <h1>GOOOOOL!</h1>
+    <span>Clique em um país para ouvir o grito do narrador</span>
+  </header>
+
+  <div class="score"><span>⚡ GOLS MARCADOS</span><b id="score">0</b></div>
+
+  <section class="grid">
+    <button class="goal-btn" data-audio="01-brasil.mp3" data-goal="GOOOOOOOL!" data-country="BRASIL">
+      <i>🇧🇷</i><strong>Brasil</strong><small>PORTUGUÊS</small>
+    </button>
+    <button class="goal-btn" data-audio="02-japao.mp3" data-goal="GOOOOOORU!" data-country="JAPÃO">
+      <i>🇯🇵</i><strong>Japão</strong><small>JAPONÊS</small>
+    </button>
+    <button class="goal-btn" data-audio="03-italia.mp3" data-goal="GOOOOOOOL!" data-country="ITÁLIA">
+      <i>🇮🇹</i><strong>Itália</strong><small>ITALIANO</small>
+    </button>
+    <button class="goal-btn" data-audio="04-franca.mp3" data-goal="BUUUUUUT!" data-country="FRANÇA">
+      <i>🇫🇷</i><strong>França</strong><small>FRANCÊS</small>
+    </button>
+    <button class="goal-btn" data-audio="05-alemanha.mp3" data-goal="TOOOOOOR!" data-country="ALEMANHA">
+      <i>🇩🇪</i><strong>Alemanha</strong><small>ALEMÃO</small>
+    </button>
+    <button class="goal-btn" data-audio="06-arabe.mp3" data-goal="GOOOOOOOL!" data-country="MUNDO ÁRABE">
+      <i>🇸🇦</i><strong>Árabe</strong><small>ÁRABE</small>
+    </button>
+    <button class="goal-btn" data-audio="07-espanhol.mp3" data-goal="GOOOOOOOL!" data-country="ESPANHA">
+      <i>🇪🇸</i><strong>Espanhol</strong><small>ESPANHOL</small>
+    </button>
+  </section>
+
+  <footer>⚽ Trabalho escolar • 7 narradores internacionais</footer>
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="ball-big">⚽</div>
+  <h2 id="goal">GOOOOOOL!</h2>
+  <p id="country">BRASIL</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
